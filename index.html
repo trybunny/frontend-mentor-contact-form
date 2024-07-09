@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+      <title>Frontend Mentor | Contact form</title>
+      <link rel="stylesheet" href="./app.css" />
+      <script defer src="script.js"></script>
+   </head>
+   <body>
+      <main>
+         <section class="wrapper">
+            <div class="app">
+               <div class="form">
+                  <h2 class="form-item form-title">Contact Us</h2>
+                  <div class="form-item form-name">
+                     <div class="form-name-item">
+                        <label for="first-name">First Name</label>
+                        <input spellcheck="false" type="text" autocomplete="off" name="first-name" id="first-name" />
+                        <p class="error hidden"></p>
+                     </div>
+                     <div class="form-name-item">
+                        <label for="last-name">Last Name</label>
+                        <input spellcheck="false" type="text" autocomplete="off" name="last-name" id="last-name" />
+                        <p class="error hidden"></p>
+                     </div>
+                  </div>
+                  <div class="form-item form-email">
+                     <label for="email">Email Address</label>
+                     <input spellcheck="false" type="email" autocomplete="off" name="email" id="email" />
+                     <p class="error hidden"></p>
+                  </div>
+                  <div class="form-item form-query-type">
+                     <label for="query-type">Query Type</label>
+                     <div id="query-type" class="query-type-item">
+                        <div class="type type--1">
+                           <span class="radio-btn">
+                              <img class="hidden" src="./assets/images/icon-radio-selected.svg" alt="" />
+                           </span>
+                           <p>General Enquiry</p>
+                        </div>
+                        <div class="type type--2">
+                           <span class="radio-btn">
+                              <img class="hidden" src="./assets/images/icon-radio-selected.svg" alt="" />
+                           </span>
+                           <p>Support Request</p>
+                        </div>
+                     </div>
+                     <p class="error hidden"></p>
+                  </div>
+                  <div class="form-item form-msg">
+                     <label for="msg-box">Message</label>
+                     <textarea type="text" autocomplete="off" name="msg" id="msg-box"></textarea>
+                     <p class="error hidden"></p>
+                  </div>
+                  <div class="form-item form-consent">
+                     <div class="consent-box">
+                        <span id="consent-check"><img class="hidden" src="./assets/images/icon-checkbox-check.svg" alt="" /></span>
+                        <p>I consent to being contacted by team</p>
+                     </div>
+                     <p class="error hidden"></p>
+                  </div>
+                  <button type="button" class="form-item form-btn">Submit</button>
+               </div>
+            </div>
+         </section>
+
+         <article class="feedback hidden">
+            <div class="card">
+               <div class="card-title">
+                  <span>
+                     <img src="./assets/images/icon-success-check.svg" alt="" />
+                  </span>
+                  <p>Message Sent!</p>
+               </div>
+               <p class="card-text">Thanks for completing the form. We'll be in touch soon!</p>
+            </div>
+         </article>
+      </main>
+
+      <!-- <footer>
+         <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+      </footer> -->
+   </body>
+</html>
